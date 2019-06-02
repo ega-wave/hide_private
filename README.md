@@ -5,15 +5,15 @@ The challenge to hide private members completely.
 Write class-declaration as usual, but you'd better save as "*_dummy.h".
 Only you need to write is private members (and base class if any).
 
-$ cat my_string_dummy.h
-
-#include <string>
-
-class my_string_dummy
-{
-private:
-	std::string str_;
-};
+> $ cat my_string_dummy.h
+> 
+> #include <string>
+> 
+> class my_string_dummy
+> {
+> private:
+> 	std::string str_;
+> };
 
 2. Generate "*_size.dat"
 You can generate "*_size.dat" by following bash function.
