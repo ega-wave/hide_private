@@ -19,8 +19,8 @@ private:
 };
 ```
 
-2. Generate "*_size.dat"
-You can generate "*_size.dat" by following bash function.
+2. Generate "_size.dat" file
+You can generate "_size.dat" file with following bash function.
 
 ```bash
 size_gen () {
