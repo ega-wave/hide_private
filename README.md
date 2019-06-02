@@ -37,8 +37,6 @@ size_gen my_string
 $ cat my_string.h
 ```
 
-typedef char int8_t;
-
 ```C++
 class my_string
 {
@@ -46,7 +44,7 @@ public:
 	my_string(const char* str);
 	operator const char* () const;
 private:
-	int8_t member_[
+	char member_[
 #include "my_string_size.dat"
 ];
 };
