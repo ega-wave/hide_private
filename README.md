@@ -1,7 +1,7 @@
 # hide_private
 The challenge to hide private members completely.
 
-1. Create dummy.h file
+## 1. Create dummy.h file
 Write class-declaration as usual, but you'd better save as "*_dummy.h".
 Only you need to write is private members (and base class if any).
 
@@ -19,7 +19,7 @@ private:
 };
 ```
 
-2. Generate "_size.dat" file
+## 2. Generate "_size.dat" file
 You can generate "_size.dat" file with following bash function.
 
 ```bash
@@ -31,7 +31,7 @@ size_gen () {
 size_gen my_string
 ```
 
-3. Write class-declaration as usual, except but private members
+## 3. Write class-declaration as usual, except but private members
 
 ```bash
 $ cat my_string.h
@@ -50,7 +50,7 @@ private:
 };
 ```
 
-4. Write class-implementation.
+## 4. Write class-implementation.
 
 ```bash
 $ cat my_string.cpp
@@ -81,7 +81,7 @@ int main()
 }
 ```
 
-6. That's it.
+## 6. That's it.
 
 ```bash
 $ g++ my_string.cpp && ./a.out
