@@ -88,8 +88,8 @@ $ g++ my_string.cpp && ./a.out
 Hello, World!
 ```
 
-This program runs as you expected if you are lucky.
-It is not portable.
+If you are lucky, this program runs as you expected.
+It is NOT PORTABLE!
 
 Happy Hacking!
 
