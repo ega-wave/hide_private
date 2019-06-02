@@ -5,9 +5,11 @@ The challenge to hide private members completely.
 Write class-declaration as usual, but you'd better save as "*_dummy.h".
 Only you need to write is private members (and base class if any).
 
-```C++
+```bash
 $ cat my_string_dummy.h
+```
 
+```C++
 #include <string>
 
 class my_string_dummy
@@ -20,19 +22,24 @@ private:
 2. Generate "*_size.dat"
 You can generate "*_size.dat" by following bash function.
 
+```bash
 size_gen () {
 	local my_class=$1
 	sed "s/CLASS/${my_class}/" size_gen.cpp	|
 	g++ -xc++ - && ./a.out > ${my_class}_size.dat && rm ./a.out
 }
 size_gen my_string
+```
 
 3. Write class-declaration as usual, except but private members
 
+```bash
 $ cat my_string.h
+```
 
 typedef char int8_t;
 
+```C++
 class my_string
 {
 public:
@@ -43,11 +50,15 @@ private:
 #include "my_string_size.dat"
 ];
 };
+```
 
 4. Write class-implementation.
 
+```bash
 $ cat my_string.cpp
+```
 
+```C++
 #include "my_string.h"
 #include <string>
 #include <iostream>
@@ -70,11 +81,14 @@ int main()
 	std::cout << str << std::endl;
 	return 0;
 }
+```
 
 6. That's it.
 
+```bash
 $ g++ my_string.cpp && ./a.out
 Hello, World!
+```
 
 This program runs as you expected if you are lucky.
 It is not portable.
