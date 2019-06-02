@@ -36,7 +36,7 @@ I hope you will find out that C++ is a great language.
 
 ## 1. Create "*_dummy.h" file
 Write class-declaration as usual, but you'd better save as "*_dummy.h".
-Only you need to write is private members (and base classes if any).
+Only stuff you need to write is private members (and base classes if any).
 
 ```bash
 $ cat my_string_dummy.h
