@@ -81,7 +81,7 @@ int main()
 }
 ```
 
-## 6. That's it.
+## 5. That's it.
 
 ```bash
 $ g++ my_string.cpp && ./a.out
