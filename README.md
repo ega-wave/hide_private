@@ -8,7 +8,6 @@ Only you need to write is private members (and base classes if any).
 ```bash
 $ cat my_string_dummy.h
 ```
-
 ```C++
 #include <string>
 
@@ -36,7 +35,6 @@ size_gen my_string
 ```bash
 $ cat my_string.h
 ```
-
 ```C++
 class my_string
 {
@@ -55,7 +53,6 @@ private:
 ```bash
 $ cat my_string.cpp
 ```
-
 ```C++
 #include "my_string.h"
 #include <string>
