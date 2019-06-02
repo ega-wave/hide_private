@@ -1,5 +1,38 @@
-# hide_private
-The challenge to hide private members completely.
+# Hide Private! - A challenge to hide private members completely.
+
+It is said that "C++ is known as object-oriented-programming-language,
+but it fails to hide private implementations".
+
+Right. 
+A C++ Class have private implementations if any,
+and they should be written apparently,
+regardless of whether you need to know.
+
+A C++ class "my_string" may use one of the following classes.
+- array of char
+- std::string
+- std::vector<char>
+- ...
+
+Programmers who use my_string class does not need to know about
+what classes it uses.
+
+```C++
+class my_string
+{
+private:
+	std::string str_;	// no need to know for user
+};
+```
+
+There are many reason why.
+One of the reason is that "the size of a class" is needed when compiling.
+
+Are there any way to hide private implementations completely?
+Yes, there is.
+I will show you the way.
+
+I hope you will find out that C++ is a great language.
 
 ## 1. Create "*_dummy.h" file
 Write class-declaration as usual, but you'd better save as "*_dummy.h".
@@ -86,7 +119,10 @@ Hello, World!
 ```
 
 If you are lucky, this program runs as you expected.
-It is NOT PORTABLE!
 
-Happy Hacking!
+CAUTION:
+
+It is UNPORTABLE code!
+You may have trouble during compiling or executing.
+Please be careful! and Happy Hacking!
 
