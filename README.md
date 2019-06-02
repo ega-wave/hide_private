@@ -1,7 +1,7 @@
 # hide_private
 The challenge to hide private members completely.
 
-## 1. Create dummy.h file
+## 1. Create "*_dummy.h" file
 Write class-declaration as usual, but you'd better save as "*_dummy.h".
 Only you need to write is private members (and base class if any).
 
@@ -19,8 +19,8 @@ private:
 };
 ```
 
-## 2. Generate "_size.dat" file
-You can generate "_size.dat" file with following bash function.
+## 2. Generate "*_size.dat" file
+You can generate "*_size.dat" file with following bash function.
 
 ```bash
 size_gen () {
